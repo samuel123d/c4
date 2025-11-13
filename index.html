@@ -429,7 +429,7 @@ function checkHold(){
     miniMsg.textContent = 'Segure na zona: ' + holdTimer.toFixed(1) + 's';
     // start defuse sound if not playing
     if (!defuseClickInterval && !defuseHumOsc) startDefuseSound();
-    if (holdTimer >= 5.0){
+    if (holdTimer >= 3.0){
       hideMiniGame();
       defuseSuccess();
     }
@@ -509,3 +509,4 @@ document.addEventListener('gesturestart', e => e.preventDefault());
 
 </body>
 </html>
+
